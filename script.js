@@ -1,286 +1,301 @@
-// ===== METADATA: One entry per EPISODE (not per part) =====
+// ===== METADATA: One entry per episode =====
+// You'll fill date/actresses later — URL is left blank for now
 const episodesData = [
   // JinriCP S1
-  { show: "JinriCP", season: 1, episode: 1, date: "", actresses: [], parts: 5 },
-  { show: "JinriCP", season: 1, episode: 2, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 3, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 4, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 5, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 6, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 7, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 8, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 9, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 10, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 11, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 12, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 13, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 14, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 15, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 16, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 17, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 18, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 19, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 1, episode: 20, date: "", actresses: [], parts: 1 },
+  { show: "JinriCP", season: 1, episode: 1, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 2, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 3, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 4, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 5, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 6, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 7, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 8, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 9, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 10, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 11, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 12, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 13, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 14, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 15, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 16, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 17, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 18, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 19, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 1, episode: 20, date: "", actresses: [], url: "" },
 
   // JinriCP S2
-  { show: "JinriCP", season: 2, episode: 1, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 2, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 3, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 4, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 5, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 6, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 7, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 8, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 9, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 10, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 11, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 12, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 13, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 14, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 15, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 16, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 17, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 18, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 19, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 2, episode: 20, date: "", actresses: [], parts: 1 },
+  { show: "JinriCP", season: 2, episode: 1, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 2, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 3, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 4, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 5, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 6, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 7, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 8, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 9, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 10, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 11, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 12, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 13, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 14, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 15, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 16, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 17, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 18, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 19, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 2, episode: 20, date: "", actresses: [], url: "" },
 
   // JinriCP S3
-  { show: "JinriCP", season: 3, episode: 1, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 2, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 3, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 4, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 5, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 6, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 7, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 8, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 9, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 10, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 11, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 12, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 13, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 14, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 15, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 16, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 17, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 18, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 19, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 3, episode: 20, date: "", actresses: [], parts: 1 },
+  { show: "JinriCP", season: 3, episode: 1, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 2, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 3, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 4, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 5, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 6, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 7, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 8, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 9, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 10, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 11, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 12, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 13, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 14, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 15, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 16, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 17, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 18, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 19, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 3, episode: 20, date: "", actresses: [], url: "" },
 
   // JinriCP S4
-  { show: "JinriCP", season: 4, episode: 1, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 2, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 3, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 4, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 5, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 6, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 7, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 8, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 9, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 10, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 11, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 12, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 13, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 14, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 15, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 16, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 17, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 18, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 19, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 4, episode: 20, date: "", actresses: [], parts: 1 },
+  { show: "JinriCP", season: 4, episode: 1, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 2, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 3, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 4, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 5, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 6, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 7, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 8, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 9, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 10, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 11, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 12, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 13, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 14, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 15, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 16, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 17, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 18, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 19, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 4, episode: 20, date: "", actresses: [], url: "" },
 
   // JinriCP S5
-  { show: "JinriCP", season: 5, episode: 1, date: "", actresses: [], parts: 2 },
-  { show: "JinriCP", season: 5, episode: 2, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 3, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 4, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 5, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 6, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 7, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 8, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 9, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 10, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 11, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 12, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 13, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 14, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 15, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 16, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 17, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 18, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 19, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 5, episode: 20, date: "", actresses: [], parts: 1 },
+  { show: "JinriCP", season: 5, episode: 1, date: "", actresses: ["韩宝贝 진리의베이비 double101",
+  "吴智林 오지림 100472",
+"元荷娜 원하나 o111na",
+"小鱼人 승승승 gkfnsus5573",
+"Eli 엘리 eli05021212",
+"棉花 이태리 naras2",
+"韩彩雅 한채아 qwer00725",
+"崔艺妮 최예니 anystar00",
+"Lorins 로린스 lorins2002",
+"初珑 초롱이 green10004",
+"惠瑞 해서 imanatural",
+"李小娜 이소나 hanyura282",
+"荷拉 하라 lotus82",
+"SSO 쏘 sos282",
+"尹诗恩 윤시은 riwon1004",
+"李时媛 이시원 kyh0301052",
+"云英 윤잉 sasa0516",
+"海姬 해찌 velyvely777"], url: "https://jiercp.com/s5/?/%E7%AC%AC%E4%BA%94%E5%AD%A3%E7%AC%AC01%E6%9C%9F20250602/" },
+  { show: "JinriCP", season: 5, episode: 2, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 3, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 4, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 5, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 6, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 7, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 8, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 9, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 10, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 11, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 12, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 13, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 14, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 15, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 16, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 17, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 18, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 19, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 5, episode: 20, date: "", actresses: [], url: "" },
 
   // JinriCP S6
-  { show: "JinriCP", season: 6, episode: 1, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 2, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 3, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 4, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 5, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 6, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 7, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 8, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 9, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 10, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 11, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 12, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 13, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 14, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 15, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 16, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 17, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 18, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 19, date: "", actresses: [], parts: 1 },
-  { show: "JinriCP", season: 6, episode: 20, date: "", actresses: [], parts: 1 },
+  { show: "JinriCP", season: 6, episode: 1, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 2, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 3, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 4, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 5, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 6, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 7, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 8, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 9, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 10, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 11, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 12, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 13, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 14, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 15, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 16, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 17, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 18, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 19, date: "", actresses: [], url: "" },
+  { show: "JinriCP", season: 6, episode: 20, date: "", actresses: [], url: "" },
 
   // PandaClass S1
-{ show: "PandaClass", season: 1, episode: 1, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 2, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 3, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 4, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 5, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 6, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 7, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 8, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 9, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 10, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 11, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 12, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 13, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 14, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 15, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 16, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 17, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 18, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 19, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 1, episode: 20, date: "", actresses: [], parts: 1 },
+{ show: "PandaClass", season: 1, episode: 1, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 2, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 3, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 4, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 5, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 6, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 7, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 8, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 9, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 10, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 11, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 12, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 13, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 14, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 15, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 16, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 17, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 18, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 19, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 1, episode: 20, date: "", actresses: [], url: "" },
 
 // PandaClass S2
-{ show: "PandaClass", season: 2, episode: 1, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 2, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 3, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 4, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 5, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 6, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 7, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 8, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 9, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 10, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 11, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 12, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 13, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 14, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 15, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 16, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 17, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 18, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 19, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 2, episode: 20, date: "", actresses: [], parts: 1 },
+{ show: "PandaClass", season: 2, episode: 1, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 2, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 3, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 4, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 5, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 6, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 7, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 8, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 9, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 10, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 11, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 12, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 13, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 14, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 15, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 16, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 17, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 18, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 19, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 2, episode: 20, date: "", actresses: [], url: "" },
 
 // PandaClass S3
-{ show: "PandaClass", season: 3, episode: 1, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 2, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 3, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 4, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 5, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 6, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 7, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 8, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 9, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 10, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 11, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 12, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 13, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 14, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 15, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 16, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 17, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 18, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 19, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 3, episode: 20, date: "", actresses: [], parts: 1 },
+{ show: "PandaClass", season: 3, episode: 1, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 2, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 3, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 4, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 5, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 6, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 7, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 8, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 9, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 10, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 11, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 12, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 13, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 14, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 15, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 16, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 17, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 18, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 19, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 3, episode: 20, date: "", actresses: [], url: "" },
 
 // PandaClass S4
-{ show: "PandaClass", season: 4, episode: 1, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 2, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 3, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 4, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 5, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 6, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 7, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 8, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 9, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 10, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 11, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 12, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 13, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 14, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 15, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 16, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 17, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 18, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 19, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 4, episode: 20, date: "", actresses: [], parts: 1 },
+{ show: "PandaClass", season: 4, episode: 1, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 2, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 3, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 4, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 5, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 6, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 7, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 8, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 9, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 10, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 11, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 12, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 13, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 14, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 15, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 16, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 17, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 18, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 19, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 4, episode: 20, date: "", actresses: [], url: "" },
 
 // PandaClass S5
-{ show: "PandaClass", season: 5, episode: 1, date: "", actresses: [], parts: 3 },
-{ show: "PandaClass", season: 5, episode: 2, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 3, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 4, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 5, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 6, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 7, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 8, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 9, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 10, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 11, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 12, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 13, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 14, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 15, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 16, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 17, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 18, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 19, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 5, episode: 20, date: "", actresses: [], parts: 1 },
+{ show: "PandaClass", season: 5, episode: 1, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 2, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 3, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 4, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 5, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 6, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 7, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 8, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 9, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 10, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 11, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 12, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 13, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 14, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 15, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 16, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 17, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 18, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 19, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 5, episode: 20, date: "", actresses: [], url: "" },
 
 // PandaClass S6
-{ show: "PandaClass", season: 6, episode: 1, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 2, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 3, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 4, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 5, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 6, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 7, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 8, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 9, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 10, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 11, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 12, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 13, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 14, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 15, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 16, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 17, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 18, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 19, date: "", actresses: [], parts: 1 },
-{ show: "PandaClass", season: 6, episode: 20, date: "", actresses: [], parts: 1 }
+{ show: "PandaClass", season: 6, episode: 1, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 2, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 3, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 4, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 5, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 6, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 7, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 8, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 9, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 10, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 11, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 12, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 13, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 14, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 15, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 16, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 17, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 18, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 19, date: "", actresses: [], url: "" },
+{ show: "PandaClass", season: 6, episode: 20, date: "", actresses: [], url: "" }
 ];
 
-// ===== STATE & DOM =====
+// For brevity in this response, I'll assume you'll expand the list.
+// Just duplicate the above block and change "JinriCP" → "PandaClass" for S1–S6.
+
+// ===== APP LOGIC =====
 const viewContainer = document.getElementById('viewContainer');
 const filterBar = document.getElementById('actressFilterBar');
 const backButton = document.getElementById('backButton');
+
 let navigationStack = [];
 const shows = [...new Set(episodesData.map(e => e.show))];
 const allActresses = [...new Set(episodesData.flatMap(e => e.actresses))].sort();
-const playerModal = document.getElementById('playerModal');
-const videoPlayer = document.getElementById('videoPlayer');
-const closePlayer = document.getElementById('closePlayer');
-const videoTitle = document.getElementById('videoTitle');
-const videoDate = document.getElementById('videoDate');
-const videoActresses = document.getElementById('videoActresses');
-let currentFilter = null;
 
-// ===== NAVIGATION HELPERS =====
+// ===== NAVIGATION =====
 function pushState(state) {
   navigationStack.push(state);
   backButton.classList.toggle('visible', navigationStack.length > 0);
@@ -299,18 +314,10 @@ function goBack() {
   } else if (state.startsWith('season|')) {
     const [_, show, season] = state.split('|');
     renderEpisodeList(show, Number(season));
-  } else if (state.startsWith('episode|')) {
-    const [__, show, season, episode] = state.split('|');
-    const ep = episodesData.find(e =>
-      e.show === show &&
-      e.season === Number(season) &&
-      e.episode === Number(episode)
-    );
-    if (ep) selectPart(ep);
   }
 }
 
-// ===== RENDER VIEWS =====
+// ===== RENDER =====
 function renderShowList() {
   viewContainer.innerHTML = '<h2 class="view-title">Shows</h2>';
   const grid = document.createElement('div');
@@ -333,11 +340,8 @@ function renderShowList() {
 
 function renderSeasonList(show) {
   const seasons = [...new Set(
-    episodesData
-      .filter(e => e.show === show)
-      .map(e => e.season)
-      .sort((a, b) => a - b)
-  )];
+    episodesData.filter(e => e.show === show).map(e => e.season)
+  )].sort((a, b) => a - b);
 
   viewContainer.innerHTML = `<h2 class="view-title">${show}</h2>`;
   const grid = document.createElement('div');
@@ -375,11 +379,11 @@ function renderEpisodeList(show, season) {
       <div class="card-title">Ep ${ep.episode}</div>
     `;
     card.addEventListener('click', () => {
-      if (ep.parts === 1) {
-        playEpisodePart(ep, 1);
+      // 🔗 Redirect to episode URL (you'll fill this in metadata)
+      if (ep.url) {
+        window.open(ep.url, '_blank');
       } else {
-        pushState(`season|${show}|${season}`);
-        selectPart(ep);
+        alert(`URL not set for ${ep.show} S${ep.season}E${ep.episode}`);
       }
     });
     grid.appendChild(card);
@@ -387,41 +391,8 @@ function renderEpisodeList(show, season) {
   viewContainer.appendChild(grid);
 }
 
-function selectPart(ep) {
-  viewContainer.innerHTML = `<h2 class="view-title">${ep.show} S${ep.season}E${ep.episode} — Select Part</h2>`;
-  const grid = document.createElement('div');
-  grid.className = 'grid';
-  for (let i = 1; i <= ep.parts; i++) {
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.innerHTML = `
-      <div class="card-img" style="background:#555;display:flex;align-items:center;justify-content:center;color:#ddd">Part ${i}</div>
-      <div class="card-title">Part ${i}</div>
-    `;
-    card.addEventListener('click', () => playEpisodePart(ep, i));
-    grid.appendChild(card);
-  }
-  viewContainer.appendChild(grid);
-}
-
-// ===== PLAYBACK =====
-function playEpisodePart(ep, part) {
-  const folder = `/${ep.show}/Season ${ep.season}/Episode ${String(ep.episode).padStart(2, '0')}/${part}`;
-  const m3u8Url = `${folder}/index.m3u8`;
-  const title = `${ep.show} S${ep.season}E${ep.episode} — Part ${part}`;
-
-  // URL-encode to be safe
-  const playerUrl = `player.html?url=${encodeURIComponent(m3u8Url)}&title=${encodeURIComponent(title)}`;
-
-  // Open in new tab
-  window.open(playerUrl, '_blank');
-}
-
-// ===== ACTRESS FILTERING =====
+// ===== FILTERING =====
 function applyActressFilter(actress) {
-  currentFilter = actress;
-  updateFilterBar();
-
   const filtered = episodesData.filter(e => e.actresses.includes(actress));
   const grouped = {};
   filtered.forEach(e => {
@@ -443,11 +414,10 @@ function applyActressFilter(actress) {
       <div class="card-title">${ep.show} S${ep.season}E${ep.episode}</div>
     `;
     card.addEventListener('click', () => {
-      if (ep.parts === 1) {
-        playEpisodePart(ep, 1);
+      if (ep.url) {
+        window.open(ep.url, '_blank');
       } else {
-        // No back from filter → episode, so we don't push state
-        selectPart(ep);
+        alert(`URL not set for ${ep.show} S${ep.season}E${ep.episode}`);
       }
     });
     grid.appendChild(card);
@@ -456,8 +426,6 @@ function applyActressFilter(actress) {
 }
 
 function clearFilter() {
-  currentFilter = null;
-  updateFilterBar();
   navigationStack = [];
   backButton.classList.remove('visible');
   renderShowList();
@@ -475,7 +443,6 @@ function updateFilterBar() {
   currentActresses.forEach(actress => {
     const tag = document.createElement('div');
     tag.className = 'filter-tag';
-    if (currentFilter === actress) tag.classList.add('active');
     tag.textContent = actress;
     tag.addEventListener('click', () => applyActressFilter(actress));
     filterBar.appendChild(tag);
@@ -483,15 +450,5 @@ function updateFilterBar() {
 }
 
 // ===== INIT =====
-closePlayer.addEventListener('click', () => {
-  playerModal.classList.add('hidden');
-  videoPlayer.pause();
-  if (window.hls) {
-    window.hls.destroy();
-    window.hls = null;
-  }
-  videoPlayer.src = '';
-});
-
 updateFilterBar();
 renderShowList();
