@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Video Library</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>My Video Library</h1>
+    <div id="backButton" class="back-button hidden" onclick="goBack()">&#8592; Back</div>
+    <div id="actressFilterBar" class="filter-bar"></div>
+  </header>
+
+  <main>
+    <div id="viewContainer">
+      <!-- Default: Show list -->
+    </div>
+  </main>
+
+  <div id="playerModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closePlayer" class="close">&times;</span>
+      <video id="videoPlayer" controls></video>
+      <div id="videoInfo">
+        <h3 id="videoTitle"></h3>
+        <p><strong>Released:</strong> <span id="videoDate"></span></p>
+        <p><strong>Actresses:</strong> <span id="videoActresses"></span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Load hls.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17"></script>
+  <script src="script.js"></script>
+</body>
+</html>

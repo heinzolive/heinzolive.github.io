@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Player</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #playerContainer {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #errorMsg {
+      color: #ff6b6b;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+  <!-- ArtPlayer CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/artplayer@5.0.7/dist/artplayer.css" />
+</head>
+<body>
+  <div id="playerContainer">
+    <div id="player"></div>
+    <div id="errorMsg" style="display:none;"></div>
+  </div>
+
+  <!-- ArtPlayer + hls.js -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@1.5.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/artplayer@5.0.7/dist/artplayer.js"></script>
+  <script>
+    // Get URL and title from query params
+    const params = new URLSearchParams(window.location.search);
+    const m3u8Url = params.get('url');
+    const title = params.get('title') || 'Video';
+
+    const errorMsg = document.getElementById('errorMsg');
+    const playerContainer = document.getElementById('playerContainer');
+
+    if (!m3u8Url) {
+      errorMsg.textContent = 'No video URL provided.';
+      errorMsg.style.display = 'block';
+    } else {
+      // Create player
+      const art = new Artplayer({
+        container: '#player',
+        url: m3u8Url,
+        title: title,
+        fullscreen: true,
+        fullscreenWeb: true,
+        autoPlayback: true,
+        autoplay: false, // respect browser autoplay policy
+        muted: false,
+        theme: '#e50914',
+        // Enable HLS support
+        customType: {
+          m3u8: function (video, url) {
+            if (Hls.isSupported()) {
+              const hls = new Hls();
+              hls.loadSource(url);
+              hls.attachMedia(video);
+              hls.on(Hls.Events.ERROR, (event, data) => {
+                console.error('HLS Error:', data);
+                errorMsg.textContent = `Playback error: ${data.type}`;
+                errorMsg.style.display = 'block';
+              });
+            } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+              video.src = url;
+            } else {
+              errorMsg.textContent = 'HLS not supported in this browser.';
+              errorMsg.style.display = 'block';
+            }
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>
